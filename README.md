@@ -10,4 +10,4 @@ dSSR/dw2[Using chain rule] = dSSR/dPredicted * dPredicted/dy2 * dy2/dx2 * dx2/dw
 
 # Sigmoid
 ![alt text](https://github.com/kwquan/activation_functions/blob/main/sigmoid.jpeg)
-
+The sigmoid function squeezes values in between 0 & 1, with the y-intercept at 0.5
