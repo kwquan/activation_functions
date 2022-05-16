@@ -22,10 +22,10 @@ This makes it very susceptible to the vanishing gradient problem where increasin
 Equation or derivative is: sigmoid(x)(1-sigmoid(x))
 
 # TanH
-![alt text](https://github.com/kwquan/activation_functions/blob/main/tanh.jpeg)
+![alt text](https://github.com/kwquan/activation_functions/blob/main/tanh.png)
 
 The hyperbolic-tangent activation function squuezes values between -1 & 1, with y-intercept=0 when x=0. \
 
-![alt text](https://github.com/kwquan/activation_functions/blob/main/tanh-derivative.jpeg)
+![alt text](https://github.com/kwquan/activation_functions/blob/main/tanh-derivative.png)
 
 Unlike the sigmoid function, the tanh function mitigates the issue of vanishing gradient by allowing for larger derivative values especially for x-values close to 0. However, it is still susceptible to vanishing gradient issue for very-positive/very-negative x-values.
