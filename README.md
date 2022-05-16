@@ -12,3 +12,9 @@ dSSR/dw2[Using chain rule] = dSSR/dPredicted * dPredicted/dy2 * dy2/dx2 * dx2/dw
 ![alt text](https://github.com/kwquan/activation_functions/blob/main/sigmoid.jpeg)
 
 The sigmoid function squeezes values in between 0 & 1, with the y-intercept at 0.5
+
+![alt text](https://github.com/kwquan/activation_functions/blob/main/sigmoid-derivative.jpeg)
+
+1 issue with the sigmoid activation function is it's low derivative values. 
+As observed from the derivative graph above, the highest derivative is only 0.25, occuring at x=0.
+This makes it very susceptible to the vanishing gradient problem where increasing products of small derivative values will produce almost-zero step sizes.
