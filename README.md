@@ -11,7 +11,7 @@ dSSR/dw2[Using chain rule] = dSSR/dPredicted * dPredicted/dy2 * dy2/dx2 * dx2/dw
 # Vanishing gradient
 Understand that partial derivatives of activation functions are used as dy1/dx1 or dy2/dx2 for calculating the above.
 Hence, repeated multiplication of dSSR/dPredicted * dPredicted/dy1 * dx1/db1 to a dy1/dx1 that is < 0 OR
-dSSR/dPredicted * dPredicted/dy2 * dx2/db2 to dy2/dx2 that is < 0 will result in ever-decreasing results.
+dSSR/dPredicted * dPredicted/dy2 * dx2/db2 to dy2/dx2 that is < 0 will produce ever-decreasing results.
 Recall that step-size = learning rate * dSSR/db1[for example] \
 This is lead to ever-decreasing step-sizes and hence neurons that won't have much updates.
 
@@ -49,7 +49,7 @@ The rectified linear unit is a simple activation function that is linear for x>=
 
 Unlike the above 2 functions, the relu function solves the issue of vanishing gradient by fixing the derivative value at 1 for positive x values. \
 This ensures that multiple products will not lead to ever-decreasing step-sizes. \
-However, the design of fixing derivative value as 0 for negative x values creates the issue of dead neurons since those neurons will never be updated as long as x values are negative. \
+However, the design of fixing derivative value at 0 for negative x values creates the issue of dead neurons since those neurons will never be updated as long as x values are negative. \
 Derivative value=1 for x>=0 else 0 
 
 # Leaky Relu
