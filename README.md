@@ -51,4 +51,15 @@ Unlike the above 2 functions, the relu function solves the issue of vanishing gr
 This ensures that multiple products will not lead to ever-decreasing step-sizes. \
 However, the design of fixing derivative value as 0 for negative x values creates the issue of dead neurons since those neurons will never be updated as long as x values are negative. \
 Derivative value=1 for x>=0 else 0 \
-Derivative is: 1 for x>=0 else 0
+
+# Leaky Relu
+![alt text](https://github.com/kwquan/activation_functions/blob/main/leaky-relu.png)
+
+The leaky rectified linear unit is a variant of the relu activation function that is linear for both x>=0 & x<0 values
+
+![alt text](https://github.com/kwquan/activation_functions/blob/main/leaky-relu-derivative.png)
+
+Unlike the relu function, the leaky relu solves the issue of dead neurons by allowing for a small derivative value[0.01] for x<0 values. \
+This ensures that gradients will continue to update even for negative x values. \
+Derivative value=1 for x>=0 else 0.01
+
