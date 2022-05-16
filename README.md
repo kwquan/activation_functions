@@ -30,4 +30,17 @@ The hyperbolic-tangent activation function squeezes values between -1 & 1, with 
 
 Unlike the sigmoid function, the tanh function mitigates the issue of vanishing gradient by allowing for larger derivative values especially for x-values close to 0. \
 However, it is still susceptible to vanishing gradient issue for very-positive/very-negative x-values. \
+Maximum derivative is 1 when x=0 \
 Equation for derivative is: 1-tanh^2(x)
+
+# Relu
+![alt text](https://github.com/kwquan/activation_functions/blob/main/relu.png)
+
+The rectified linear unit is a simple activation function that is linear for x>=0 values & 0 for x<0 values
+
+![alt text](https://github.com/kwquan/activation_functions/blob/main/relu-derivative.png)
+
+Unlike the above 2 functions, the relu function solves the issue of vanishing gradient by fixing the derivative value at 0 for positive x values. This ensures that multiple products will not lead to ever-decreasing step-sizes. \
+However, the design of fixing derivative value as 0 for negative x values creates the issue of dead neurons since those neurons will never be updated as long as x values are negative. \
+Derivative value=1 for x>=0 else 0 \
+Equation for derivative is: 1 for x>=0 else 0
