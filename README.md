@@ -50,7 +50,7 @@ The rectified linear unit is a simple activation function that is linear for x>=
 Unlike the above 2 functions, the relu function solves the issue of vanishing gradient by fixing the derivative value at 1 for positive x values. \
 This ensures that multiple products will not lead to ever-decreasing step-sizes. \
 However, the design of fixing derivative value as 0 for negative x values creates the issue of dead neurons since those neurons will never be updated as long as x values are negative. \
-Derivative value=1 for x>=0 else 0 \
+Derivative value=1 for x>=0 else 0 
 
 # Leaky Relu
 ![alt text](https://github.com/kwquan/activation_functions/blob/main/leaky-relu.png)
