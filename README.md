@@ -9,5 +9,5 @@ dSSR/dw1[Using chain rule] = dSSR/dPredicted * dPredicted/dy1 * dy1/dx1 * dx1/dw
 dSSR/dw2[Using chain rule] = dSSR/dPredicted * dPredicted/dy2 * dy2/dx2 * dx2/dw2 
 
 # Sigmoid
-
+![alt text](https://github.com/kwquan/activation_functions/blob/main/sigmoid.jpeg)
 
