@@ -44,4 +44,4 @@ Unlike the above 2 functions, the relu function solves the issue of vanishing gr
 This ensures that multiple products will not lead to ever-decreasing step-sizes. \
 However, the design of fixing derivative value as 0 for negative x values creates the issue of dead neurons since those neurons will never be updated as long as x values are negative. \
 Derivative value=1 for x>=0 else 0 \
-Equation for derivative is: 1 for x>=0 else 0
+Derivative is: 1 for x>=0 else 0
