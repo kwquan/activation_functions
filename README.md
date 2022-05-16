@@ -19,7 +19,7 @@ The sigmoid function squeezes values in between 0 & 1, with the y-intercept at 0
 Notice how the derivative values approach 0 especially for x-values > 3 or < -3. \
 As observed from the derivative graph above, the highest derivative is only 0.25, occuring at x=0. \
 This makes it very susceptible to the vanishing gradient problem where increasing products of small derivative values will produce almost-zero step sizes. \
-Equation or derivative is: sigmoid(x)(1-sigmoid(x))
+Equation for derivative is: sigmoid(x)(1-sigmoid(x))
 
 # TanH
 ![alt text](https://github.com/kwquan/activation_functions/blob/main/tanh.png)
@@ -28,4 +28,6 @@ The hyperbolic-tangent activation function squeezes values between -1 & 1, with 
 
 ![alt text](https://github.com/kwquan/activation_functions/blob/main/tanh-derivative.png)
 
-Unlike the sigmoid function, the tanh function mitigates the issue of vanishing gradient by allowing for larger derivative values especially for x-values close to 0. However, it is still susceptible to vanishing gradient issue for very-positive/very-negative x-values.
+Unlike the sigmoid function, the tanh function mitigates the issue of vanishing gradient by allowing for larger derivative values especially for x-values close to 0. \
+However, it is still susceptible to vanishing gradient issue for very-positive/very-negative x-values. \
+Equation for derivative is: 1-tanh^2(x)
