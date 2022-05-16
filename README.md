@@ -24,7 +24,7 @@ Equation or derivative is: sigmoid(x)(1-sigmoid(x))
 # TanH
 ![alt text](https://github.com/kwquan/activation_functions/blob/main/tanh.png)
 
-The hyperbolic-tangent activation function squuezes values between -1 & 1, with y-intercept=0 when x=0. \
+The hyperbolic-tangent activation function squeezes values between -1 & 1, with y-intercept=0 when x=0
 
 ![alt text](https://github.com/kwquan/activation_functions/blob/main/tanh-derivative.png)
 
